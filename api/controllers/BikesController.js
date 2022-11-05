@@ -50,7 +50,6 @@ const postBike=async (req, res) => {
                     ]
                 })
                 const dataToSave = await data.save();
-                console.log('Download URL', url)
                 res.send(dataToSave)
             })
  

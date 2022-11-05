@@ -10,6 +10,9 @@ const User = new Schema({
     email:String,
     bloodType:String,
     bornDate:Date,
+    emergencyContactNumber:String, 
+    emergencyContactName:String, 
+    phoneNumber: String,
     profileImage:[String]
 })
 

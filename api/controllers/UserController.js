@@ -42,12 +42,14 @@ const postUser=async (req, res) => {
                     email: req.body.email,
                     bloodType:req.body.bloodType,
                     bornDate:req.body.bornDate,
+                    emergencyContactNumber:req.body.emergencyContactNumber,
+                    emergencyContactName:req.body.emergencyContactName,
+                    phoneNumber:req.body.phoneNumber,
                     profileImage:[
                         url
                     ]
                 })
                 const dataToSave = await data.save();
-                console.log('Download URL', url)
                 res.send(dataToSave)
             })
  
